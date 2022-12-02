@@ -1,0 +1,68 @@
+/* styles.css */
+
+body {
+    background-image: url("resources/background.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    font-family: 'Allerta Stencil';
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+    line-height: 95px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 3px #fff, 0 0 7px #fff, 0 0 15px #5400e6, 0 0 20px #5400e6, 0 0 25px #5400e6, 0 0 30px #5400e6, 0 0 35px #5400e6;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 12px #fff, 0 0 25px #5400e6, 0 0 40px #5400e6, 0 0 40px #5400e6, 0 0 50px #5400e6, 0 0 55px #5400e6;
+    }
+}
+
+.startButtonContainer,
+.instructionButtonContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#startButton,
+#instructionButton {
+    color: #34d602;
+    border: 3px solid #71ff46;
+    background-color: rgb(255, 253, 253);
+    border-radius: 15px;
+    padding: 15px 25px;
+    font-size: 30px;
+    font-family: 'Alegreya Sans SC';
+    letter-spacing: 5px;
+    filter: drop-shadow(0 0 10px #71ff46) drop-shadow(0 0 15px #71ff46);
+    display: block; /* allows the button to be lined up vertically */
+    transition: .2s;
+}
+
+#startButton {
+    margin-top: 130px;
+}
+
+#instructionButton {
+    margin-top: 80px;
+}
+
+#startButton:hover,
+#instructionButton:hover {
+    color: white;
+    background-color: #34d602;
+    filter: drop-shadow(0 0 20px #71ff46);
+}

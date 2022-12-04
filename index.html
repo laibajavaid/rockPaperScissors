@@ -8,18 +8,46 @@
     <title>Rock Paper Scissors</title>
     <!-- link css to html -->
     <link rel="stylesheet" href="styles.css">
+    <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
 </head>
 
 <body>
-    <div class="intro">Are You Ready To Test Your Luck In A Game Of Rock, Paper, Scissors?</div>
-    <div class="startButtonContainer">
-        <button id="startButton">Start Game</button>
+    <div class="startingContainer" id="starter">
+        <div class="intro">Are You Ready To Test Your Luck In A Game Of Rock, Paper, Scissors?</div>
+        <div class="startButtonContainer">
+            <button id="startButton">Start Game</button>
+        </div>
+        <div class="instructionButtonContainer">
+            <button id="instructionButton">How To Play</button>
+        </div>
     </div>
-    <div class="instructionButtonContainer">
-        <button id="instructionButton">How To Play</button>
+
+    <div class="instructionsContainer" id="instructions" style="display:none;">
+        <div class="howToPlay">
+            <h1>How To Play</h1>
+            <h2>A simple and fun game is "rock, paper, scissors." It was a game that a lot of us used to play in
+                school
+                to settle conflicts or pass the time. You won't be competing against a human opponent this time;
+                instead, you'll be up against a computer. For those who have never played, the rules are quite
+                simple:
+            </h2>
+            <div class="list">
+                <ul>
+                    <li>If you choose Rock, you will win against Scissors but lose against Paper.</li>
+                    <li>If you choose Scissors, you will win against Paper but lose against Rock.</li>
+                    <li>If you choose Paper, you will win against Rock but lose against Scissors.</li>
+                </ul>
+            </div>
+            <h2 class="endHeadingTwo">Try your luck right now and see if you can defeat the computer.</h2>
+        </div>
+        <div class="homePage">
+            <button id="homepage">Homepage</button>
+        </div>
     </div>
+
     <!-- link js file -->
     <script src="javascript.js"></script>
 </body>

@@ -8,7 +8,9 @@ body {
     align-items: center;
 }
 
-.intro {
+.intro,
+.heading, 
+.subHeading {
     font-family: 'Allerta Stencil';
     font-size: 70px;
     color: #fff;
@@ -17,6 +19,10 @@ body {
     letter-spacing: 3px;
     margin-top: 20px;
     animation: glow 2s ease-in-out infinite alternate;
+}
+
+.subHeading {
+    font-size: 50px;
 }
 
 @keyframes glow {
@@ -31,7 +37,8 @@ body {
 
 .startButtonContainer,
 .instructionButtonContainer,
-.homePage {
+.homePage,
+.startGame {
     width: 100%;
     height: 100%;
     display: flex;
@@ -40,19 +47,20 @@ body {
 
 #startButton,
 #instructionButton,
-#homepage {
-    color: #34d602;
-    border: 3px solid #71ff46;
+#homepage, 
+#homepageTwo {
+    color: #02bfcd;
+    border: 3px solid #00eeff;
     background-color: rgb(255, 253, 253);
     border-radius: 15px;
     padding: 15px 25px;
     font-size: 30px;
     font-family: 'Alegreya Sans SC';
     letter-spacing: 5px;
-    filter: drop-shadow(0 0 10px #71ff46) drop-shadow(0 0 15px #71ff46);
+    filter: drop-shadow(0 0 10px #00eeff) drop-shadow(0 0 15px #00eeff);
     /* allows the button to be lined up vertically */
     display: block;
-    transition: .2s;
+    transform: translate(-1%, -3%);
 }
 
 #startButton {
@@ -67,8 +75,10 @@ body {
 #instructionButton:hover,
 #homepage:hover {
     color: white;
-    background-color: #34d602;
-    filter: drop-shadow(0 0 20px #71ff46);
+    background-color: #02bfcd;
+    transform: translate(-2%, -15%);
+    transition: all 0.1s ease-in;
+    filter: drop-shadow(0 0 20px #00eeff);
 }
 
 .howToPlay {
@@ -77,7 +87,7 @@ body {
     color: black;
     margin: 60px 60px;
     border-radius: 15px;
-    filter: drop-shadow(0 0 10px #ff8f39) drop-shadow(0 0 15px #ff8f39);
+    filter: drop-shadow(0 0 10px #5400e6) drop-shadow(0 0 15px #5400e6);
 }
 
 h1 {
@@ -113,6 +123,86 @@ li {
 .endHeadingTwo {
     padding-bottom: 5px;
 }
+
 #homepage {
     margin-top: 50px;
 }
+
+.startGame {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.humanPlayer {
+    background-color: rgb(255, 253, 253);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 70px 40px;
+    width: 480px;
+    height: 350px;
+    filter: drop-shadow(0 0 10px #07f985) drop-shadow(0 0 15px #07f985);
+    float: left;
+}
+
+.humanPlayerHeading, .computerPlayerHeading {
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: 'Alegreya';
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.humanPlayerScore, .computerPlayerScore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Alegreya';
+    text-align: center;
+    margin-top: -25px;
+}
+
+.humanSelection, .computerSelection {
+    display: flex;
+    justify-content: center;
+}
+
+.hSelect, .cSelect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 30px;
+    transform: translate(-1%, -3%);
+}
+
+.hSelection, .cSelection {
+    height: 115px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.hSelection:hover {
+    transform: translateY(-5%);
+    filter: drop-shadow(0 0 10px #ccff00) drop-shadow(0 0 15px #ccff00);
+  }
+
+  .computerPlayer {
+    background-color: rgb(255, 253, 253);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 70px 40px;
+    width: 480px;
+    height: 350px;
+    float: right;
+    filter: drop-shadow(0 0 10px #ccff00) drop-shadow(0 0 15px #ccff00);
+}
+
+.cSelection:hover {
+    transform: translateY(-5%);
+    filter: drop-shadow(0 0 10px #07f985) drop-shadow(0 0 15px #07f985);
+  }

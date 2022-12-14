@@ -9,7 +9,7 @@ body {
 }
 
 .intro,
-.heading, 
+.heading,
 .subHeading {
     font-family: 'Allerta Stencil';
     font-size: 70px;
@@ -47,8 +47,9 @@ body {
 
 #startButton,
 #instructionButton,
-#homepage, 
-#homepageTwo {
+#homepage,
+#homepageTwo,
+#playAgain {
     color: #02bfcd;
     border: 3px solid #00eeff;
     background-color: rgb(255, 253, 253);
@@ -71,9 +72,16 @@ body {
     margin-top: 80px;
 }
 
+#playAgain {
+    text-decoration: none;
+    margin-top: 80px;
+}
+
 #startButton:hover,
 #instructionButton:hover,
-#homepage:hover {
+#homepage:hover,
+#homepageTwo:hover,
+#playAgain:hover {
     color: white;
     background-color: #02bfcd;
     transform: translate(-2%, -15%);
@@ -148,7 +156,8 @@ li {
     float: left;
 }
 
-.humanPlayerHeading, .computerPlayerHeading {
+.humanPlayerHeading,
+.computerPlayerHeading {
     padding-top: 20px;
     font-size: 30px;
     font-family: 'Alegreya';
@@ -156,7 +165,8 @@ li {
     margin-bottom: 5px;
 }
 
-.humanPlayerScore, .computerPlayerScore {
+.humanPlayerScore,
+.computerPlayerScore {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,31 +176,38 @@ li {
     margin-top: -25px;
 }
 
-.humanSelection, .computerSelection {
+.humanSelection,
+.computerSelection {
     display: flex;
     justify-content: center;
 }
 
-.hSelect, .cSelect {
+.hSelect,
+.cSelect {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 50px 30px;
-    transform: translate(-1%, -3%);
 }
 
-.hSelection, .cSelection {
+.hSelection,
+.cSelection {
     height: 115px;
     width: 100px;
     border-radius: 10px;
 }
 
 .hSelection:hover {
-    transform: translateY(-5%);
-    filter: drop-shadow(0 0 10px #ccff00) drop-shadow(0 0 15px #ccff00);
-  }
+    box-shadow: 0 0 3px 3px #ccff00;
+}
 
-  .computerPlayer {
+.humanPick {
+    filter: drop-shadow(0 0 10px #ccff00) drop-shadow(0 0 15px #ccff00);
+    transition: all 2s ease;
+    transform: scale(1.1);
+}
+
+.computerPlayer {
     background-color: rgb(255, 253, 253);
     border-radius: 10px;
     text-transform: uppercase;
@@ -202,7 +219,45 @@ li {
     filter: drop-shadow(0 0 10px #ccff00) drop-shadow(0 0 15px #ccff00);
 }
 
-.cSelection:hover {
-    transform: translateY(-5%);
+.computerPick {
     filter: drop-shadow(0 0 10px #07f985) drop-shadow(0 0 15px #07f985);
-  }
+    transition: all 2s ease;
+    transform: scale(1.1);
+}
+
+.lastPage {
+    display: none;
+    text-align: center;
+}
+
+.winners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.win {
+    display: none;
+    text-align: center;
+    height: 320px;
+    width: 400px;
+    filter: drop-shadow(0 0 10px #00eeff) drop-shadow(0 0 15px #00eeff);
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.humanWinner,
+.computerWinner,
+.draw {
+    display: none;
+    font-family: 'Allerta Stencil';
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    line-height: 95px;
+    letter-spacing: 3px;
+    margin-top: 60px;
+    animation: glow 2s ease-in-out infinite alternate;
+}

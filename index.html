@@ -54,13 +54,13 @@
         <div class="humanPlayer">
             <div class="humanPlayerHeading">Human</div>
             <div class="humanSelection">
-                <div class="hSelect" id="rock">
+                <div class="hSelect" id="humanRock">
                     <img class="hSelection" id ="rockPic" src="./resources/rock.jpg">
                 </div>
-                <div class="hSelect" id="paper">
+                <div class="hSelect" id="humanPaper">
                     <img class="hSelection" id="paperPic" src="./resources/paper.jpg">
                 </div>
-                <div class="hSelect" id="scissors">
+                <div class="hSelect" id="humanScissors">
                     <img class="hSelection" id="scissorsPic" src="./resources/scissors.jpg">
                 </div>
             </div>
@@ -71,13 +71,13 @@
         <div class="computerPlayer">
             <div class="computerPlayerHeading">Computer</div>
             <div class="computerSelection">
-                <div class="cSelect" id="rock">
+                <div class="cSelect" id="computerRock">
                     <img class="cSelection" id ="rockCompPic" src="./resources/rock.jpg">
                 </div>
-                <div class="cSelect" id="paper">
+                <div class="cSelect" id="computerPaper">
                     <img class="cSelection" id="paperCompPic" src="./resources/paper.jpg">
                 </div>
-                <div class="cSelect" id="scissors">
+                <div class="cSelect" id="computerScissors">
                     <img class="cSelection" id="scissorsCompPic" src="./resources/scissors.jpg">
                 </div>
             </div>
@@ -90,8 +90,22 @@
         </div>
     </div>
 
+    <div class="lastPage">
+        <div class="winners">
+            <img class="win" id="humanWins" src="./resources/humanPlayer.jpeg">
+            <img class="win" id="computerWins" src="./resources/computerPlayer.webp">
+        </div>
+        <div class="humanWinner" id="humanWinner"></div>
+        <div class="computerWinner" id="computerWinner"></div>
+        <div class="draw" id="drawWin"></div>
+        <div class="homePage">
+            <!-- <button id="homepageThree">Homepage</button> -->
+            <a href="index.html" class="playAgainButton" id="playAgain">Play Again</a>
+        </div>
+    </div>
+
     <!-- link js file -->
-    <script src="javascript.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,9 @@ A rock, paper, scissors game created using front end developement foundations, e
 
 ## Built With
 HTML
+
 CSS
+
 Javascript
 
 ## Screen Recording

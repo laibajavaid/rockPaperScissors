@@ -16,4 +16,4 @@ Javascript
 https://user-images.githubusercontent.com/77513009/207961364-3af9ba9a-3cb7-4bfd-8183-70579376cf51.mov
 
 ## Links
-[View the webpage here]
+[View the webpage here]https://laibajavaid.github.io/rockPaperScissors/
